@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Task 2</title>
+</head>
+
+<body>
+    <div class="prompt"></div>
+    <div class="main_container">
+        <div class="side_nav">
+            <div class="nav_fixed">
+                <div class="logo">
+                    <h1><a href="/" onclick="route()">Task 4</a></h1>
+                </div>
+                <div class="search">
+                    <input type="text" name="searchText" id="side_nav_search" placeholder="Search..." value="" />
+                </div>
+                <ul>
+                    <li>
+                        <a href="/add" onclick="route()"><i class="fa-solid fa-plus"></i> Create New User</a
+              >
+            </li>
+            <li>About us</li>
+            <li>Help</li>
+            <li>Settings</li>
+          </ul>
+        </div>
+      </div>
+      <div class="dynamic_section" id="root"></div>
+    </div>
+  </body>
+  <script src="./js/script.js"></script>
+  <script src="./js/router.js"></script>
+  <script src="./js/data.js"></script>
+</html>

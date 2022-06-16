@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+
+p {
+    font-family: "Open Sans";
+}
+
+::placeholder {
+    color: #adb7be;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #adb7be;
+}
+
+::-ms-input-placeholder {
+    color: #adb7be;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #011627;
+    color: rgb(237, 245, 255);
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(237, 245, 255);
+}
+
+.main_container {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.side_nav {
+    position: relative !important;
+    left: 0;
+    display: flex;
+    height: 100%;
+    flex: 1;
+    flex-shrink: 1;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #0c4b7e;
+    align-items: flex-start;
+    background-color: #adb7be;
+}
+
+.side_nav .nav_fixed ul {
+    flex-grow: 1;
+}
+
+.side_nav .nav_fixed ul li {
+    list-style: none;
+    margin: 30px 0;
+}
+
+.side_nav .nav_fixed ul li:hover {
+    text-shadow: 0 0 5px #fff;
+}
+
+.side_nav div h1 {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.side_nav .search input:focus {
+    outline: none;
+    color: rgb(230, 236, 248);
+}
+
+.side_nav .nav_fixed {
+    top: 0;
+    position: fixed;
+    border: 1px solid #405060;
+    height: 100%;
+    border-right: 1px solid #0c4b7e;
+    width: 100%;
+}
+
+.side_nav .nav_fixed .logo {
+    margin: 0 30px;
+}
+
+.side_nav .nav_fixed .search input {
+    width: 15%;
+    background-color: #305674;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #405060;
+    border-radius: 10px;
+    color: #97bcdb;
+}
+
+.dynamic_section {
+    position: relative;
+    flex: 4;
+    min-height: 100vh;
+    background-color: #05223a;
+    padding: 20px;
+}
+
+
+/* Home Page */
+
+.page_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.users_data {
+    border: 2px solid #0b2c48;
+}
+
+.table_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+thead {
+    background-color: #032a4a;
+}
+
+.tr_1 {
+    background-color: #0b2c48;
+}
+
+.tr_0 td,
+.tr_1 td {
+    color: #ccc;
+    font-family: sans-serif !important;
+}
+
+.td_options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100px;
+}
+
+.tr_0 .td_options button {
+    transition: all 300ms ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tr_1 .td_options button {
+    transition: all 300ms ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tr_0 .td_options:hover button,
+.tr_1 .td_options:hover button {
+    transition: all 300ms ease;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.liquid_button,
+.view_data {
+    background-color: transparent;
+    border: none;
+    color: rgb(244, 248, 255);
+}
+
+.prompt {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.475);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.view {
+    width: 50vw;
+    background-color: #092d4b;
+    border-radius: 10px;
+}
+
+.view h2 {
+    color: #fff;
+}
+
+.view h3 i {
+    color: rgb(252, 219, 9);
+}
+
+.view p i {
+    color: rgb(145, 171, 255);
+}
+
+.relative {
+    position: relative;
+    height: inherit;
+    width: inherit;
+    padding: 10px 20px 40px;
+}
+
+.position-bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.mar_center {
+    margin: 0px auto;
+}
+
+.edit_users_data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.edit_form input {
+    width: 30vw;
+    padding: 10px;
+    background-color: #515b64;
+    color: #eee;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn_positive {
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 10px;
+    border: none;
+    color: rgb(39, 109, 39);
+    border-radius: 5px;
+    transition: all 200ms ease;
+    font-weight: bold;
+}
+
+.btn_positive:hover {
+    background-color: #eee;
+}
+
+.btn_negative {
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 10px;
+    border: none;
+    color: rgb(109, 39, 39);
+    border-radius: 5px;
+    transition: all 200ms ease;
+}
+
+.btn_negative:hover {
+    background-color: #ccc;
+}
