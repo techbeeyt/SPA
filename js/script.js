@@ -280,7 +280,15 @@ search_div.innerHTML = `
 <h2>Search Users</h2>
 `;
 
+const recentSearches = document.createElement("div");
+recentSearches.classList.add("recent_search");
+
+let recentSearchesHTML = `
+<h3>Recent Searches</h3>
+`;
+recentSearches.innerHTML = recentSearchesHTML;
 search.appendChild(search_div);
+search.appendChild(recentSearches);
 
 let search_table = document.createElement("table");
 search_table.setAttribute("cellpadding", "12");
@@ -313,7 +321,9 @@ const renderSearchTable = () => {
     } else if (document.getElementById("id_search_thead")) {
         document.getElementById(
             "id_search_thead"
-        ).innerHTML = `<h2>No match found !</h2>`;
+        ).innerHTML = `<h4>No match found !</h4>`;
+
+        recentSearches.innerHTML = `<h3>Search Result</h3>`;
     }
 
     if (document.getElementById("newSearchTbody")) {
@@ -369,4 +379,24 @@ renderSearchTable();
 //############### SEARCH -> #################
 
 const add = document.createElement("div");
-add.innerHTML = "<h1>addPage</h1>";
+add.innerHTML = `
+<h2>Add New User</h2>
+<div class="add_container">
+<div class="add_sub_container">
+<p>First Name: </p>
+<input type="text" />
+<p>Last Name: </p>
+<input type="text" />
+<p>Email: </p>
+<input type="text" />
+<p>Point: </p>
+<input type="text" />
+<p>Phone: </p>
+<input type="text" />
+<p>Company: </p>
+<input type="text" />
+<br />
+<button class="create_user">CREATE USER</button>
+</div>
+</div>
+`;

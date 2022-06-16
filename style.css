@@ -242,13 +242,14 @@ thead {
     margin-bottom: 20px;
 }
 
-.edit_form input {
+.edit_form input,
+.add_container input {
     width: 30vw;
     padding: 10px;
-    background-color: #515b64;
+    background-color: #3c4a57;
     color: #eee;
     border: none;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 .btn_positive {
@@ -278,4 +279,32 @@ thead {
 
 .btn_negative:hover {
     background-color: #ccc;
+}
+
+.add_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    background-color: #294389;
+    width: 100%;
+    padding: 15px;
+    margin-top: 0;
+    border-radius: 6px;
+}
+
+.create_user {
+    background-color: rgb(228, 228, 228);
+    width: 100%;
+    padding: 13px;
+    margin-top: 20px;
+    border: none;
+    color: #294389;
+    font-family: "Poppins";
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
 }
