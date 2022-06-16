@@ -8,6 +8,7 @@ const route = (event) => {
 const routes = {
     "/": home,
     "/index.html": home,
+    "/SPA": home,
     "/add": add,
     "/edit": edit,
     "/search": search,
@@ -17,7 +18,6 @@ const handleLocation = async() => {
     const path = window.location.pathname;
     const partsOfPaths = path.split("/");
     let folder = `/${partsOfPaths[1]}`;
-    let parameter = `${partsOfPaths[2]}`;
     const page = routes[folder] || routes[404];
     document.getElementById("root").innerHTML =
         new XMLSerializer().serializeToString(page);

@@ -90,14 +90,19 @@ a {
     margin: 0 30px;
 }
 
-.side_nav .nav_fixed .search input {
+.side_nav .nav_fixed .search {
     width: 15%;
     background-color: #305674;
-    padding: 10px;
     margin: 20px;
     border: 1px solid #405060;
     border-radius: 10px;
+}
+
+.side_nav .nav_fixed .search input {
     color: #97bcdb;
+    background-color: transparent;
+    padding: 10px 0px 10px 20px;
+    border: none;
 }
 
 .dynamic_section {
