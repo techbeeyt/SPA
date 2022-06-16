@@ -288,7 +288,7 @@ thead {
     align-items: center;
 }
 
-h2 {
+.page_header h2 {
     background-color: #294389;
     width: 100%;
     padding: 15px;
